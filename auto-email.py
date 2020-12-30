@@ -23,6 +23,6 @@ with smtplib.SMTP_SSL('smtp.gmail.com', 465) as smtp:
 			msg['Subject'] = 'Subject'
 			msg['From'] = EMAIL_ADDRESS
 			msg.set_content('Hello ')
-      msg['To'] = " "
-			line = fp.readline()		
+                        msg['To'] = " "
+		        line = fp.readline()		
 			smtp.send_message(msg)
